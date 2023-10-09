@@ -21,21 +21,25 @@ emailForm.addEventListener("submit", function (e) {
 
   if (emailInput.value.length == 0) {
     errorMessage.style.display = "inline-block";
+    emailInput.classList.add("invalid");
     return (errorMessage.textContent = "Please enter your email.");
+  } else {
+    // Test the email against the regex
+    if (emailRegex.test(emailInput.value)) {
+      emailInput.classList.remove("invalid");
+      emailInput.classList.add("valid");
+      errorMessage.textContent = "";
+      errorMessage.style.display = "none";
+      console.log("Email is valid:", emailInput.value);
+    } else {
+      errorMessage.style.display = "inline-block";
+      errorMessage.textContent = "";
+      errorMessage.textContent =
+        "Invalid email address. Please enter a valid email.";
+      return;
+    }
   }
 
-  // Test the email against the regex
-  if (emailRegex.test(emailInput.value)) {
-    errorMessage.textContent = "";
-    errorMessage.style.display = "none";
-    console.log("Email is valid:", emailInput.value);
-  } else {
-    errorMessage.style.display = "inline-block";
-    errorMessage.textContent = "";
-    errorMessage.textContent =
-      "Invalid email address. Please enter a valid email.";
-    return;
-  }
 
   //Check if the checkbox is checked.
   if (!policyCheckbox.checked) {

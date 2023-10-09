@@ -78,14 +78,18 @@ input {
   border: 0.78px solid #cbd1d8;
   background: #fafafc;
 }
-
-input:required:invalid {
+/* this class will apply when input didn't pass the regex */
+.invalid {
   border: 1px solid red;
   flex-grow: 1;
   padding: 0.75rem 1rem;
   align-items: flex-start;
   border-radius: 6.3px;
   background: #fafafc;
+}
+/* this class will apply when input pass the regex */
+.valid{
+  border: 1px solid green;
 }
 
 /* Style for error messages */
