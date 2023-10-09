@@ -1,0 +1,260 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+  color: #7e8b9e;
+}
+
+.login-container {
+  margin: 0rem 4.5rem;
+}
+
+label {
+  color: #000;
+  font-weight: 600;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  color: black;
+}
+.background {
+  background-image: url("/assets/images/background_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#login {
+  width: 75%;
+}
+
+#emailForm {
+  width: 75%;
+}
+
+#heading {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem; /* 48px */
+}
+
+#subheading {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem; /* 24px */
+}
+
+#logo {
+  /**change it to rem*/
+  width: 13.5246rem;
+  flex-shrink: 0;
+  margin: 1.25rem 0 2.5rem 0px;
+  /* background: lightgray 50% / cover no-repeat; */
+}
+
+#email {
+  /* margin-top: 1.5rem; */
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+  font-weight: 600;
+  line-height: 2rem; /* 21px */
+}
+
+/* input:focus {
+  border: 1px solid red;
+} */
+
+/* input:required:after {
+  border-color: red;
+} */
+
+input {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  align-items: flex-start;
+  border-radius: 6.3px;
+  border: 0.78px solid #cbd1d8;
+  background: #fafafc;
+}
+
+input:required:invalid {
+  border: 1px solid red;
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  align-items: flex-start;
+  border-radius: 6.3px;
+  background: #fafafc;
+}
+
+/* Style for error messages */
+.error-message {
+  color: red;
+}
+
+.input-container {
+  display: flex;
+}
+
+.policy {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-grow: 1;
+  align-items: start;
+}
+
+.term-checkbox {
+  width: 13px;
+  margin: 6px 6px 0 0;
+  display: inline-block;
+}
+
+.term-policy {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  color: #7e8b9e;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 180%;
+}
+
+a {
+  color: #f2c046;
+  text-decoration: none;
+  font-size: 0.875rem;
+  /* font-style: normal; */
+  font-weight: 500;
+  line-height: 180%;
+}
+
+#signup {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  padding: 12px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border: none;
+  border-radius: 6.361px;
+  background: #f2c046;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.divider-text {
+  margin: 0 10px;
+  color: #999;
+  font-weight: bold;
+}
+
+.Wallet {
+  flex-grow: 1;
+  display: flex;
+  border-radius: 6.361px;
+  background-color: white;
+  color: #7e8b9e;
+  border: solid #e0e3e8 0.795px;
+  padding: 10px 20px;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%;
+}
+
+#login-here {
+  margin-top: 1rem;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.app-img {
+  margin-top: -60px !important;
+}
+.apps {
+  text-align: center;
+  width: 70%;
+}
+.apps h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.apps p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #667085;
+}
+
+@media only screen and (max-width: 991px) {
+  .apps {
+    text-align: center;
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .login-container {
+    margin: 0rem;
+  }
+  #logo {
+    padding-left: 1.25rem;
+  }
+  .background {
+    background-image: url("/assets/images/background_image_mobile.png");
+    background-size: cover;
+    background-position: bottom center;
+  }
+  #login {
+    width: 100%;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  #emailForm {
+    /* margin-left: 72px; */
+    width: 100%;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .apps {
+    text-align: center;
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+
+  .app-img svg {
+    overflow: hidden !important;
+  }
+
+  svg {
+    width: 100%;
+  }
+}
+
+/* @media only screen and (max-width: 768px) {
+  .apps {
+    text-align: center;
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+} */
